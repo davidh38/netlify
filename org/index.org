@@ -1,6 +1,6 @@
 
 #+title: Doom Emacs (Under Construction)
-
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
 This site is still under construction, but content will be updated from time to time.

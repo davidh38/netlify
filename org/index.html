@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-10 Do 21:21 -->
+<!-- 2020-09-10 Do 21:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Doom Emacs (Under Construction)</title>
@@ -193,6 +193,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
@@ -225,58 +231,57 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org713db9b">1. This site is still under construction</a></li>
-<li><a href="#org5aaa39c">2. Doom Emacs Introduction</a></li>
-<li><a href="#orga1d799c">3. Basic Concepts</a>
+<li><a href="#orgea478dc">1. This site is still under construction</a></li>
+<li><a href="#org5238da8">2. Doom Emacs Introduction</a></li>
+<li><a href="#org34babee">3. Basic Concepts</a>
 <ul>
-<li><a href="#org87c832b">3.1. Workspace</a></li>
-<li><a href="#org318e152">3.2. Projects</a></li>
-<li><a href="#orga2e02c3">3.3. Windows</a></li>
-<li><a href="#org5dec4e8">3.4. Buffers</a></li>
+<li><a href="#org3da22ab">3.1. Workspace</a></li>
+<li><a href="#org64d8e41">3.2. Projects</a></li>
+<li><a href="#org5336e21">3.3. Windows</a></li>
+<li><a href="#org5742640">3.4. Buffers</a></li>
 </ul>
 </li>
-<li><a href="#org9c8975d">4. Evil Mode</a></li>
-<li><a href="#org24d18a5">5. Organizing Tool (org mode)</a></li>
-<li><a href="#org116620e">6. WebProject</a></li>
-<li><a href="#orgfde798e">7. Python IDE (inferior python)</a>
+<li><a href="#orgcca8f08">4. Evil Mode</a></li>
+<li><a href="#org47d09f2">5. Organizing Tool (org mode)</a></li>
+<li><a href="#orga2a1530">6. WebProject</a></li>
+<li><a href="#orge25639a">7. Python IDE (inferior python)</a>
 <ul>
-<li><a href="#orgfc8e6d2">7.1. REPL</a></li>
-<li><a href="#orgf5a4d86">7.2. Debbugging</a></li>
-<li><a href="#orgc06ac9c">7.3. Testing</a></li>
+<li><a href="#orgc897fd5">7.1. REPL</a></li>
+<li><a href="#orga82da4e">7.2. Debbugging</a></li>
+<li><a href="#orgc92b904">7.3. Testing</a></li>
 </ul>
 </li>
-<li><a href="#org9725ee8">8. Clojure IDE</a>
+<li><a href="#org8f9c465">8. Clojure IDE</a>
 <ul>
-<li><a href="#orgae32da9">8.1. REPL</a></li>
-<li><a href="#org4dcf653">8.2. Debugging</a></li>
+<li><a href="#orgc079377">8.1. REPL</a></li>
+<li><a href="#org0d79330">8.2. Debugging</a></li>
 </ul>
 </li>
-<li><a href="#orgb17519f">9. File explorer (dired)</a>
+<li><a href="#org65e719b">9. File explorer (dired)</a>
 <ul>
-<li><a href="#orgd15ffda">9.1. show directory content</a></li>
-<li><a href="#org2e9c6b6">9.2. file delete/move</a></li>
-<li><a href="#orgb3f6500">9.3. directory</a></li>
+<li><a href="#orgfc766a9">9.1. show directory content</a></li>
+<li><a href="#org9a73d5d">9.2. file delete/move</a></li>
+<li><a href="#org2e9cdb0">9.3. directory</a></li>
 </ul>
 </li>
-<li><a href="#org24ce3e7">10. ELisp IDE</a></li>
-<li><a href="#orge0d40b3">11. Version Control</a></li>
-<li><a href="#org331407b">12. Package Manager</a></li>
-<li><a href="#org6dfeb7b">13. Customizing</a></li>
+<li><a href="#orgc036179">10. ELisp IDE</a></li>
+<li><a href="#org5868f98">11. Version Control</a></li>
+<li><a href="#org3bb964d">12. Package Manager</a></li>
+<li><a href="#org0d84690">13. Customizing</a></li>
 </ul>
 </div>
 </div>
 
-
-<div id="outline-container-org713db9b" class="outline-2">
-<h2 id="org713db9b"><span class="section-number-2">1</span> This site is still under construction</h2>
+<div id="outline-container-orgea478dc" class="outline-2">
+<h2 id="orgea478dc"><span class="section-number-2">1</span> This site is still under construction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This site is still under construction, but content will be updated from time to time.
 </p>
 </div>
 </div>
-<div id="outline-container-org5aaa39c" class="outline-2">
-<h2 id="org5aaa39c"><span class="section-number-2">2</span> Doom Emacs Introduction</h2>
+<div id="outline-container-org5238da8" class="outline-2">
+<h2 id="org5238da8"><span class="section-number-2">2</span> Doom Emacs Introduction</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 officical Download: <a href="https://github.com/hlissner/doom-emacs">https://github.com/hlissner/doom-emacs</a>
@@ -286,31 +291,31 @@ officical Download: <a href="https://github.com/hlissner/doom-emacs">https://git
 </ul>
 </div>
 </div>
-<div id="outline-container-orga1d799c" class="outline-2">
-<h2 id="orga1d799c"><span class="section-number-2">3</span> Basic Concepts</h2>
+<div id="outline-container-org34babee" class="outline-2">
+<h2 id="org34babee"><span class="section-number-2">3</span> Basic Concepts</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org87c832b" class="outline-3">
-<h3 id="org87c832b"><span class="section-number-3">3.1</span> Workspace</h3>
+<div id="outline-container-org3da22ab" class="outline-3">
+<h3 id="org3da22ab"><span class="section-number-3">3.1</span> Workspace</h3>
 </div>
-<div id="outline-container-org318e152" class="outline-3">
-<h3 id="org318e152"><span class="section-number-3">3.2</span> Projects</h3>
+<div id="outline-container-org64d8e41" class="outline-3">
+<h3 id="org64d8e41"><span class="section-number-3">3.2</span> Projects</h3>
 </div>
-<div id="outline-container-orga2e02c3" class="outline-3">
-<h3 id="orga2e02c3"><span class="section-number-3">3.3</span> Windows</h3>
+<div id="outline-container-org5336e21" class="outline-3">
+<h3 id="org5336e21"><span class="section-number-3">3.3</span> Windows</h3>
 </div>
-<div id="outline-container-org5dec4e8" class="outline-3">
-<h3 id="org5dec4e8"><span class="section-number-3">3.4</span> Buffers</h3>
+<div id="outline-container-org5742640" class="outline-3">
+<h3 id="org5742640"><span class="section-number-3">3.4</span> Buffers</h3>
 </div>
 </div>
-<div id="outline-container-org9c8975d" class="outline-2">
-<h2 id="org9c8975d"><span class="section-number-2">4</span> Evil Mode</h2>
+<div id="outline-container-orgcca8f08" class="outline-2">
+<h2 id="orgcca8f08"><span class="section-number-2">4</span> Evil Mode</h2>
 </div>
-<div id="outline-container-org24d18a5" class="outline-2">
-<h2 id="org24d18a5"><span class="section-number-2">5</span> Organizing Tool (org mode)</h2>
+<div id="outline-container-org47d09f2" class="outline-2">
+<h2 id="org47d09f2"><span class="section-number-2">5</span> Organizing Tool (org mode)</h2>
 </div>
-<div id="outline-container-org116620e" class="outline-2">
-<h2 id="org116620e"><span class="section-number-2">6</span> WebProject</h2>
+<div id="outline-container-orga2a1530" class="outline-2">
+<h2 id="orga2a1530"><span class="section-number-2">6</span> WebProject</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 with org mode
@@ -331,61 +336,61 @@ with org mode
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfde798e" class="outline-2">
-<h2 id="orgfde798e"><span class="section-number-2">7</span> Python IDE (inferior python)</h2>
+<div id="outline-container-orge25639a" class="outline-2">
+<h2 id="orge25639a"><span class="section-number-2">7</span> Python IDE (inferior python)</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-orgfc8e6d2" class="outline-3">
-<h3 id="orgfc8e6d2"><span class="section-number-3">7.1</span> REPL</h3>
+<div id="outline-container-orgc897fd5" class="outline-3">
+<h3 id="orgc897fd5"><span class="section-number-3">7.1</span> REPL</h3>
 </div>
-<div id="outline-container-orgf5a4d86" class="outline-3">
-<h3 id="orgf5a4d86"><span class="section-number-3">7.2</span> Debbugging</h3>
+<div id="outline-container-orga82da4e" class="outline-3">
+<h3 id="orga82da4e"><span class="section-number-3">7.2</span> Debbugging</h3>
 </div>
-<div id="outline-container-orgc06ac9c" class="outline-3">
-<h3 id="orgc06ac9c"><span class="section-number-3">7.3</span> Testing</h3>
+<div id="outline-container-orgc92b904" class="outline-3">
+<h3 id="orgc92b904"><span class="section-number-3">7.3</span> Testing</h3>
 </div>
 </div>
-<div id="outline-container-org9725ee8" class="outline-2">
-<h2 id="org9725ee8"><span class="section-number-2">8</span> Clojure IDE</h2>
+<div id="outline-container-org8f9c465" class="outline-2">
+<h2 id="org8f9c465"><span class="section-number-2">8</span> Clojure IDE</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-orgae32da9" class="outline-3">
-<h3 id="orgae32da9"><span class="section-number-3">8.1</span> REPL</h3>
+<div id="outline-container-orgc079377" class="outline-3">
+<h3 id="orgc079377"><span class="section-number-3">8.1</span> REPL</h3>
 </div>
-<div id="outline-container-org4dcf653" class="outline-3">
-<h3 id="org4dcf653"><span class="section-number-3">8.2</span> Debugging</h3>
+<div id="outline-container-org0d79330" class="outline-3">
+<h3 id="org0d79330"><span class="section-number-3">8.2</span> Debugging</h3>
 </div>
 </div>
-<div id="outline-container-orgb17519f" class="outline-2">
-<h2 id="orgb17519f"><span class="section-number-2">9</span> File explorer (dired)</h2>
+<div id="outline-container-org65e719b" class="outline-2">
+<h2 id="org65e719b"><span class="section-number-2">9</span> File explorer (dired)</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-orgd15ffda" class="outline-3">
-<h3 id="orgd15ffda"><span class="section-number-3">9.1</span> show directory content</h3>
+<div id="outline-container-orgfc766a9" class="outline-3">
+<h3 id="orgfc766a9"><span class="section-number-3">9.1</span> show directory content</h3>
 </div>
-<div id="outline-container-org2e9c6b6" class="outline-3">
-<h3 id="org2e9c6b6"><span class="section-number-3">9.2</span> file delete/move</h3>
+<div id="outline-container-org9a73d5d" class="outline-3">
+<h3 id="org9a73d5d"><span class="section-number-3">9.2</span> file delete/move</h3>
 </div>
-<div id="outline-container-orgb3f6500" class="outline-3">
-<h3 id="orgb3f6500"><span class="section-number-3">9.3</span> directory</h3>
+<div id="outline-container-org2e9cdb0" class="outline-3">
+<h3 id="org2e9cdb0"><span class="section-number-3">9.3</span> directory</h3>
 </div>
 </div>
-<div id="outline-container-org24ce3e7" class="outline-2">
-<h2 id="org24ce3e7"><span class="section-number-2">10</span> ELisp IDE</h2>
+<div id="outline-container-orgc036179" class="outline-2">
+<h2 id="orgc036179"><span class="section-number-2">10</span> ELisp IDE</h2>
 </div>
-<div id="outline-container-orge0d40b3" class="outline-2">
-<h2 id="orge0d40b3"><span class="section-number-2">11</span> Version Control</h2>
+<div id="outline-container-org5868f98" class="outline-2">
+<h2 id="org5868f98"><span class="section-number-2">11</span> Version Control</h2>
 </div>
-<div id="outline-container-org331407b" class="outline-2">
-<h2 id="org331407b"><span class="section-number-2">12</span> Package Manager</h2>
+<div id="outline-container-org3bb964d" class="outline-2">
+<h2 id="org3bb964d"><span class="section-number-2">12</span> Package Manager</h2>
 </div>
-<div id="outline-container-org6dfeb7b" class="outline-2">
-<h2 id="org6dfeb7b"><span class="section-number-2">13</span> Customizing</h2>
+<div id="outline-container-org0d84690" class="outline-2">
+<h2 id="org0d84690"><span class="section-number-2">13</span> Customizing</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: David H</p>
-<p class="date">Created: 2020-09-10 Do 21:21</p>
+<p class="date">Created: 2020-09-10 Do 21:33</p>
 </div>
 </body>
 </html>
