@@ -2,10 +2,11 @@
 #+title: Doom Emacs (Under Construction)
 
 
-* Doom Emacs Introduction
 ** This site is still under construction
 This site is still under construction, but content will be updated from time to time.
+** Doom Emacs Introduction
 ** Basic Concepts
+** Evil Mode
 ** Organizing Tool (org mode)
 ** WebProject
 ** Python IDE (inferior python)
