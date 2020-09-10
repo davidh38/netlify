@@ -6,12 +6,24 @@
 This site is still under construction, but content will be updated from time to time.
 ** Doom Emacs Introduction
 ** Basic Concepts
+*** Workspace
+*** Projects
+*** Windows
+*** Buffers
 ** Evil Mode
 ** Organizing Tool (org mode)
 ** WebProject
+*** with org mode
 ** Python IDE (inferior python)
+*** REPL
+*** Debbugging
 ** Clojure IDE
+*** REPL
+*** Debugging
 ** File explorer (dired)
+*** show directory content
+*** file delete/move
+*** directory
 ** ELisp IDE
 ** Version Control
 ** Package Manager
