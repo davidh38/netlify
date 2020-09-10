@@ -1,7 +1,17 @@
 
-#+title: Doom Emacs Under Construction
-
+#+title: Doom Emacs (Under Construction)
 
 
 * Doom Emacs Introduction
-** This site is still under constrution
+** This site is still under construction
+This site is still under construction, but content will be updated from time to time.
+** Basic Concepts
+** Organizing Tool (org mode)
+** WebProject
+** Python IDE (inferior python)
+** Clojure IDE
+** File explorer (dired)
+** ELisp IDE
+** Version Control
+** Package Manager
+** Customizing
