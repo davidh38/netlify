@@ -2,10 +2,10 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
-This site is still under construction, but content will be updated from time to time.
+This site is still under construction, but content will be updated from time to time!
 ** Doom Emacs Introduction
 official Download: https://github.com/hlissner/doom-emacs
--  Doom Emacs is a Emacs distribution with an emphasis on vim users.
+-  Doom Emacs is an Emacs distribution with an emphasis on vim users.
 ** Basic Concepts
 *** Projects
 - what is .projectile for?
@@ -15,7 +15,7 @@ official Download: https://github.com/hlissner/doom-emacs
 motivation: Suppose you are working on your notes and programming at the same time. If you want to have this processes to be separate, workspaces is the answer for that.
 *** Windows
 *** Buffers
-** Evil Mode
+** Evil Mode (Vim mode for Emacs)
 ** Organizing Tool (org mode)
 - org-agenda (SPC n a n)
 set org-agenda files:
@@ -43,14 +43,28 @@ SPC : pdb
 ** Clojure IDE
 *** REPL
 - install the :lang by SPC f P and uncomment python in init.el
+- SPC : clojure/open-repl
 *** Debugging
 ** File explorer (dired)
 *** show directory content
 *** file delete/move
 *** directory
 ** ELisp IDE
-Version Control
+#+BEGIN_SRC elisp
+(defun myownfuncion ()
+       (interactive)
+       (insert "hello fab")
+)
+(myownfuncion)
+#+END_SRC
+
+
+** Version Control
 ** Package Manager
+SPC : package install
+    treemacs
+or SPC f p -> init.el and uncomment treemacs
+    uncomment treemacs
 ** Customizing
 ** FAQ's
     - How to scroll downwards in big steps?
