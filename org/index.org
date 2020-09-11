@@ -1,5 +1,4 @@
-
-* #+title: Doom Emacs (Under Construction)
+ #+title: Doom Emacs (Under Construction)
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
@@ -8,7 +7,6 @@ This site is still under construction, but content will be updated from time to 
 officical Download: https://github.com/hlissner/doom-emacs
 -  Doom Emacs is a Emacs distribitution with an emphasis on vim users.
 ** Basic Concepts
-***
 *** Projects
 - what is .projectile for?
   - having a projectile on a deeper level than the git repository
@@ -49,6 +47,6 @@ set org-agenda files:
 *** file delete/move
 *** directory
 ** ELisp IDE
-** Version Control
+Version Control
 ** Package Manager
 ** Customizing
