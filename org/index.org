@@ -1,27 +1,27 @@
- #+title: Doom Emacs (Under Construction)
+#+title: Doom Emacs (Under Construction)
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
 This site is still under construction, but content will be updated from time to time.
 ** Doom Emacs Introduction
-officical Download: https://github.com/hlissner/doom-emacs
--  Doom Emacs is a Emacs distribitution with an emphasis on vim users.
+official Download: https://github.com/hlissner/doom-emacs
+-  Doom Emacs is a Emacs distribution with an emphasis on vim users.
 ** Basic Concepts
 *** Projects
 - what is .projectile for?
   - having a projectile on a deeper level than the git repository
 - adding a project SPC p a
 *** Workspace
-motivation: Suppose you are working on your notes and programming at the same time. If you want to have this procecess to be seperate, workspaces is the answer for that.
+motivation: Suppose you are working on your notes and programming at the same time. If you want to have this processes to be separate, workspaces is the answer for that.
 *** Windows
 *** Buffers
 ** Evil Mode
 ** Organizing Tool (org mode)
-
 - org-agenda (SPC n a n)
 set org-agenda files:
     (setq org-agenda-files '("~/Dropbox/org/"))
-** WebProject
+** Web Project
+- ispell
 ** Python IDE (inferior python)
 - install the :lang by SPC f P and uncomment python in init.el
 - start buffer
@@ -37,7 +37,7 @@ set org-agenda files:
             [tab] nil)
     + Suspicious state from syntax checker python-flake8: Flycheck checker python-flake8 returned (error "Process flycheck-python-flake8 not running"), but its output contained no errors: emacs: /home/dave/.local/bin/flake8: No such file or directory
     - pip3 install 'python-language-server[all]'*** REPL
-*** Debbugging
+*** Debugging
 *** Testing
 ** Clojure IDE
 *** REPL
