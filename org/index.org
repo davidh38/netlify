@@ -1,8 +1,9 @@
-#+title: Doom Emacs (Under Construction)
+#+title: Unofficial Doom Emacs (Under Construction)
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
 This site is still under construction, but content will be updated from time to time!
+[[file:Screenshot from 2020-09-12 13-43-49.png][This how it looks like:]]
 ** Doom Emacs Introduction
 official Download: https://github.com/hlissner/doom-emacs
 -  Doom Emacs is an Emacs distribution with an emphasis on vim users.
@@ -60,7 +61,7 @@ configure this in init.el
 #+BEGIN_SRC elisp
 (defun myownfuncion ()
        (interactive)
-       (insert "hello fab")
+       (insert "hello")
 )
 (myownfuncion)
 #+END_SRC
