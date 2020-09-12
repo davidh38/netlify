@@ -24,19 +24,25 @@ set org-agenda files:
 - ispell: check spelling of the current buffer
 ** Python IDE (inferior python)
 - install the :lang by SPC f P and uncomment python in init.el
+  - (python +lsp +poetry)
+  - (company +tng)
+  - pdb, ipdb, gdb, pdbpp
+  - SPC f f -> for starting a new file
+- compile with SPC c c
 - start buffer
 - run-python
 - CTRL + C CTRL + C
+- SPC s i for imenu
 - Issues
     with org mode:
-    + config for tapping in REPL
-    - in config.el;
-        (map! :after comint
-            :map comint-mode-map
-            "TAB" nil
-            [tab] nil)
-    + Suspicious state from syntax checker python-flake8: Flycheck checker python-flake8 returned (error "Process flycheck-python-flake8 not running"), but its output contained no errors: emacs: /home/dave/.local/bin/flake8: No such file or directory
-    - pip3 install 'python-language-server[all]'*** REPL
+  + config for tapping in REPL
+  + in config.el;
+      (map! :after comint
+          :map comint-mode-map
+          "TAB" nil
+          [tab] nil)
+  + Suspicious state from syntax checker python-flake8: Flycheck checker python-flake8 returned (error "Process flycheck-python-flake8 not running"), but its output contained no errors: emacs: /home/dave/.local/bin/flake8: No such file or directory
+  + pip3 install 'python-language-server[all]'*** REPL
 *** Debugging
 SPC : pdb
 *** Testing
@@ -50,6 +56,7 @@ SPC : pdb
 *** file delete/move
 *** directory
 ** ELisp IDE
+configure this in init.el
 #+BEGIN_SRC elisp
 (defun myownfuncion ()
        (interactive)
@@ -60,6 +67,8 @@ SPC : pdb
 
 
 ** Version Control
+- dont forget to type a message in the commit message
+- stage file s on unstaged file or SPC g S
 ** Package Manager
 SPC : package install
     treemacs
@@ -68,4 +77,3 @@ or SPC f p -> init.el and uncomment treemacs
 ** Customizing
 ** FAQ's
     - How to scroll downwards in big steps?
-Test
