@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-12 Sa 14:46 -->
+<!-- 2020-09-12 Sa 15:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Unofficial Doom Emacs (Under Construction)</title>
@@ -231,58 +231,59 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org3dae556">1. This site is still under construction</a></li>
-<li><a href="#orgc223287">2. Doom Emacs Introduction</a></li>
-<li><a href="#org638517d">3. Basic Concepts</a>
+<li><a href="#org0a5f8f8">1. This site is still under construction</a></li>
+<li><a href="#orgb16f374">2. Doom Emacs Introduction</a></li>
+<li><a href="#org1a66a47">3. Basic Concepts</a>
 <ul>
-<li><a href="#org95526c1">3.1. Projects</a></li>
-<li><a href="#org0ecd544">3.2. Workspace</a></li>
-<li><a href="#org575e4fd">3.3. Windows</a></li>
-<li><a href="#org2c99c5c">3.4. Buffers</a></li>
+<li><a href="#orge005f2e">3.1. Projects</a></li>
+<li><a href="#orgbfccabd">3.2. Workspace</a></li>
+<li><a href="#org3bc685a">3.3. Windows</a></li>
+<li><a href="#org1d83153">3.4. Buffers</a></li>
 </ul>
 </li>
-<li><a href="#org4f8bdc9">4. Evil Mode (Vim mode for Emacs)</a></li>
-<li><a href="#org376064e">5. Organizing Tool (org mode)</a></li>
-<li><a href="#orgc26c7c4">6. Web Project</a></li>
-<li><a href="#orgb0c2435">7. Python IDE (inferior python)</a>
+<li><a href="#org497bc73">4. Evil Mode (Vim mode for Emacs)</a></li>
+<li><a href="#orgbe894b6">5. Organizing Tool (org mode)</a></li>
+<li><a href="#orgdb39c82">6. Web Project</a></li>
+<li><a href="#org5406918">7. Python IDE (inferior python)</a>
 <ul>
-<li><a href="#orgcb81c14">7.1. Debugging</a></li>
-<li><a href="#org171a725">7.2. Testing</a></li>
+<li><a href="#org5733714">7.1. Debugging</a></li>
+<li><a href="#orgf6e036d">7.2. Testing</a></li>
 </ul>
 </li>
-<li><a href="#org9ffdfa1">8. Clojure IDE</a>
+<li><a href="#org65b3572">8. Clojure IDE</a>
 <ul>
-<li><a href="#orgf554e52">8.1. REPL</a></li>
-<li><a href="#orge46b058">8.2. Debugging</a></li>
+<li><a href="#orgcc145b3">8.1. REPL</a></li>
+<li><a href="#org250e366">8.2. Debugging</a></li>
 </ul>
 </li>
-<li><a href="#orgd87a62f">9. File explorer (dired)</a>
+<li><a href="#org6003bc7">9. File explorer (dired)</a>
 <ul>
-<li><a href="#org38c7ba2">9.1. show directory content</a></li>
-<li><a href="#org75b277a">9.2. file delete/move</a></li>
-<li><a href="#orgf05f1a5">9.3. directory</a></li>
+<li><a href="#org1338007">9.1. show directory content</a></li>
+<li><a href="#org341aba3">9.2. file delete/move</a></li>
+<li><a href="#org97470d3">9.3. directory</a></li>
 </ul>
 </li>
-<li><a href="#orgf4bb485">10. ELisp IDE</a></li>
-<li><a href="#org68fa042">11. Version Control</a></li>
-<li><a href="#org15d081b">12. Package Manager</a></li>
-<li><a href="#org3aeb2b4">13. Customizing</a></li>
-<li><a href="#org8f254d1">14. FAQ&rsquo;s</a></li>
+<li><a href="#org43a98c7">10. ELisp IDE</a></li>
+<li><a href="#orgfb8f35a">11. Version Control</a></li>
+<li><a href="#org29eb47d">12. Package Manager</a></li>
+<li><a href="#orgc4f35c0">13. Customizing</a></li>
+<li><a href="#org4f0d3ad">14. FAQ&rsquo;s</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org3dae556" class="outline-2">
-<h2 id="org3dae556"><span class="section-number-2">1</span> This site is still under construction</h2>
+<div id="outline-container-org0a5f8f8" class="outline-2">
+<h2 id="org0a5f8f8"><span class="section-number-2">1</span> This site is still under construction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This site is still under construction, but content will be updated from time to time!
-<a href="Screenshot from 2020-09-12 13-43-49.png">This how it looks like:</a>
+<img src="Screenshot from 2020-09-12 13-43-49.png" alt="Screenshot from 2020-09-12 13-43-49.png" />
 </p>
 </div>
 </div>
-<div id="outline-container-orgc223287" class="outline-2">
-<h2 id="orgc223287"><span class="section-number-2">2</span> Doom Emacs Introduction</h2>
+
+<div id="outline-container-orgb16f374" class="outline-2">
+<h2 id="orgb16f374"><span class="section-number-2">2</span> Doom Emacs Introduction</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 official Download: <a href="https://github.com/hlissner/doom-emacs">https://github.com/hlissner/doom-emacs</a>
@@ -292,12 +293,12 @@ official Download: <a href="https://github.com/hlissner/doom-emacs">https://gith
 </ul>
 </div>
 </div>
-<div id="outline-container-org638517d" class="outline-2">
-<h2 id="org638517d"><span class="section-number-2">3</span> Basic Concepts</h2>
+<div id="outline-container-org1a66a47" class="outline-2">
+<h2 id="org1a66a47"><span class="section-number-2">3</span> Basic Concepts</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org95526c1" class="outline-3">
-<h3 id="org95526c1"><span class="section-number-3">3.1</span> Projects</h3>
+<div id="outline-container-orge005f2e" class="outline-3">
+<h3 id="orge005f2e"><span class="section-number-3">3.1</span> Projects</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>what is .projectile for?
@@ -308,26 +309,26 @@ official Download: <a href="https://github.com/hlissner/doom-emacs">https://gith
 </ul>
 </div>
 </div>
-<div id="outline-container-org0ecd544" class="outline-3">
-<h3 id="org0ecd544"><span class="section-number-3">3.2</span> Workspace</h3>
+<div id="outline-container-orgbfccabd" class="outline-3">
+<h3 id="orgbfccabd"><span class="section-number-3">3.2</span> Workspace</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 motivation: Suppose you are working on your notes and programming at the same time. If you want to have this processes to be separate, workspaces is the answer for that.
 </p>
 </div>
 </div>
-<div id="outline-container-org575e4fd" class="outline-3">
-<h3 id="org575e4fd"><span class="section-number-3">3.3</span> Windows</h3>
+<div id="outline-container-org3bc685a" class="outline-3">
+<h3 id="org3bc685a"><span class="section-number-3">3.3</span> Windows</h3>
 </div>
-<div id="outline-container-org2c99c5c" class="outline-3">
-<h3 id="org2c99c5c"><span class="section-number-3">3.4</span> Buffers</h3>
+<div id="outline-container-org1d83153" class="outline-3">
+<h3 id="org1d83153"><span class="section-number-3">3.4</span> Buffers</h3>
 </div>
 </div>
-<div id="outline-container-org4f8bdc9" class="outline-2">
-<h2 id="org4f8bdc9"><span class="section-number-2">4</span> Evil Mode (Vim mode for Emacs)</h2>
+<div id="outline-container-org497bc73" class="outline-2">
+<h2 id="org497bc73"><span class="section-number-2">4</span> Evil Mode (Vim mode for Emacs)</h2>
 </div>
-<div id="outline-container-org376064e" class="outline-2">
-<h2 id="org376064e"><span class="section-number-2">5</span> Organizing Tool (org mode)</h2>
+<div id="outline-container-orgbe894b6" class="outline-2">
+<h2 id="orgbe894b6"><span class="section-number-2">5</span> Organizing Tool (org mode)</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>org-agenda (SPC n a n)</li>
@@ -338,16 +339,16 @@ set org-agenda files:
 </p>
 </div>
 </div>
-<div id="outline-container-orgc26c7c4" class="outline-2">
-<h2 id="orgc26c7c4"><span class="section-number-2">6</span> Web Project</h2>
+<div id="outline-container-orgdb39c82" class="outline-2">
+<h2 id="orgdb39c82"><span class="section-number-2">6</span> Web Project</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>ispell: check spelling of the current buffer</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb0c2435" class="outline-2">
-<h2 id="orgb0c2435"><span class="section-number-2">7</span> Python IDE (inferior python)</h2>
+<div id="outline-container-org5406918" class="outline-2">
+<h2 id="org5406918"><span class="section-number-2">7</span> Python IDE (inferior python)</h2>
 <div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li>install the :lang by SPC f P and uncomment python in init.el
@@ -376,24 +377,24 @@ with org mode:
 </ul></li>
 </ul>
 </div>
-<div id="outline-container-orgcb81c14" class="outline-3">
-<h3 id="orgcb81c14"><span class="section-number-3">7.1</span> Debugging</h3>
+<div id="outline-container-org5733714" class="outline-3">
+<h3 id="org5733714"><span class="section-number-3">7.1</span> Debugging</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 SPC : pdb
 </p>
 </div>
 </div>
-<div id="outline-container-org171a725" class="outline-3">
-<h3 id="org171a725"><span class="section-number-3">7.2</span> Testing</h3>
+<div id="outline-container-orgf6e036d" class="outline-3">
+<h3 id="orgf6e036d"><span class="section-number-3">7.2</span> Testing</h3>
 </div>
 </div>
-<div id="outline-container-org9ffdfa1" class="outline-2">
-<h2 id="org9ffdfa1"><span class="section-number-2">8</span> Clojure IDE</h2>
+<div id="outline-container-org65b3572" class="outline-2">
+<h2 id="org65b3572"><span class="section-number-2">8</span> Clojure IDE</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-orgf554e52" class="outline-3">
-<h3 id="orgf554e52"><span class="section-number-3">8.1</span> REPL</h3>
+<div id="outline-container-orgcc145b3" class="outline-3">
+<h3 id="orgcc145b3"><span class="section-number-3">8.1</span> REPL</h3>
 <div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>install the :lang by SPC f P and uncomment python in init.el</li>
@@ -401,26 +402,26 @@ SPC : pdb
 </ul>
 </div>
 </div>
-<div id="outline-container-orge46b058" class="outline-3">
-<h3 id="orge46b058"><span class="section-number-3">8.2</span> Debugging</h3>
+<div id="outline-container-org250e366" class="outline-3">
+<h3 id="org250e366"><span class="section-number-3">8.2</span> Debugging</h3>
 </div>
 </div>
-<div id="outline-container-orgd87a62f" class="outline-2">
-<h2 id="orgd87a62f"><span class="section-number-2">9</span> File explorer (dired)</h2>
+<div id="outline-container-org6003bc7" class="outline-2">
+<h2 id="org6003bc7"><span class="section-number-2">9</span> File explorer (dired)</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org38c7ba2" class="outline-3">
-<h3 id="org38c7ba2"><span class="section-number-3">9.1</span> show directory content</h3>
+<div id="outline-container-org1338007" class="outline-3">
+<h3 id="org1338007"><span class="section-number-3">9.1</span> show directory content</h3>
 </div>
-<div id="outline-container-org75b277a" class="outline-3">
-<h3 id="org75b277a"><span class="section-number-3">9.2</span> file delete/move</h3>
+<div id="outline-container-org341aba3" class="outline-3">
+<h3 id="org341aba3"><span class="section-number-3">9.2</span> file delete/move</h3>
 </div>
-<div id="outline-container-orgf05f1a5" class="outline-3">
-<h3 id="orgf05f1a5"><span class="section-number-3">9.3</span> directory</h3>
+<div id="outline-container-org97470d3" class="outline-3">
+<h3 id="org97470d3"><span class="section-number-3">9.3</span> directory</h3>
 </div>
 </div>
-<div id="outline-container-orgf4bb485" class="outline-2">
-<h2 id="orgf4bb485"><span class="section-number-2">10</span> ELisp IDE</h2>
+<div id="outline-container-org43a98c7" class="outline-2">
+<h2 id="org43a98c7"><span class="section-number-2">10</span> ELisp IDE</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 configure this in init.el
@@ -437,17 +438,17 @@ configure this in init.el
 </div>
 
 
-<div id="outline-container-org68fa042" class="outline-2">
-<h2 id="org68fa042"><span class="section-number-2">11</span> Version Control</h2>
+<div id="outline-container-orgfb8f35a" class="outline-2">
+<h2 id="orgfb8f35a"><span class="section-number-2">11</span> Version Control</h2>
 <div class="outline-text-2" id="text-11">
 <ul class="org-ul">
-<li>dont forget to type a message in the commit message</li>
+<li>don&rsquo;t forget to type a message in the commit message</li>
 <li>stage file s on unstaged file or SPC g S</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org15d081b" class="outline-2">
-<h2 id="org15d081b"><span class="section-number-2">12</span> Package Manager</h2>
+<div id="outline-container-org29eb47d" class="outline-2">
+<h2 id="org29eb47d"><span class="section-number-2">12</span> Package Manager</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 SPC : package install
@@ -457,11 +458,11 @@ or SPC f p -&gt; init.el and uncomment treemacs
 </p>
 </div>
 </div>
-<div id="outline-container-org3aeb2b4" class="outline-2">
-<h2 id="org3aeb2b4"><span class="section-number-2">13</span> Customizing</h2>
+<div id="outline-container-orgc4f35c0" class="outline-2">
+<h2 id="orgc4f35c0"><span class="section-number-2">13</span> Customizing</h2>
 </div>
-<div id="outline-container-org8f254d1" class="outline-2">
-<h2 id="org8f254d1"><span class="section-number-2">14</span> FAQ&rsquo;s</h2>
+<div id="outline-container-org4f0d3ad" class="outline-2">
+<h2 id="org4f0d3ad"><span class="section-number-2">14</span> FAQ&rsquo;s</h2>
 <div class="outline-text-2" id="text-14">
 <ul class="org-ul">
 <li>How to scroll downwards in big steps?</li>
@@ -471,7 +472,7 @@ or SPC f p -&gt; init.el and uncomment treemacs
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: David H</p>
-<p class="date">Created: 2020-09-12 Sa 14:46</p>
+<p class="date">Created: 2020-09-12 Sa 15:47</p>
 </div>
 </body>
 </html>

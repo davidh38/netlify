@@ -3,7 +3,7 @@
 
 ** This site is still under construction
 This site is still under construction, but content will be updated from time to time!
-[[file:Screenshot from 2020-09-12 13-43-49.png][This how it looks like:]]
+[[file:Screenshot from 2020-09-12 13-43-49.png]]
 ** Doom Emacs Introduction
 official Download: https://github.com/hlissner/doom-emacs
 -  Doom Emacs is an Emacs distribution with an emphasis on vim users.
@@ -68,7 +68,7 @@ configure this in init.el
 
 
 ** Version Control
-- dont forget to type a message in the commit message
+- don't forget to type a message in the commit message
 - stage file s on unstaged file or SPC g S
 ** Package Manager
 SPC : package install
