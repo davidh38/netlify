@@ -2,7 +2,7 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
-This site is still under construction, but content will be updated from time to time!
+This *site* is still under construction, but content will be updated from time to time!
 This is how doom emacs looks like:
 [[file:Screenshot from 2020-09-12 13-43-49.png]]
 ** Doom Emacs Introduction
@@ -20,6 +20,7 @@ motivation: Suppose you are working on your notes and programming at the same ti
 *** Buffers
 ** Evil Mode (Vim mode for Emacs)
 ** Organizing Tool (org mode)
+- org-lint
 - open org-agenda: =SPC n a n=
 - set org-agenda files:
   #+BEGIN_SRC elisp
@@ -72,7 +73,7 @@ configure this in init.el
 
 
 ** Version Control (magit)
-- stage and commit: =SPC g g=, then stage with =s= and commt with =c=
+- stage and commit: =SPC g g=, then stage with =s=, commtt with =c= and push with =p=
 - don't forget to type a message in the commit message
 ** Package Manager
 =SPC := package install
