@@ -71,13 +71,13 @@ configure this in init.el
 #+END_SRC
 
 
-** Version Control
+** Version Control (magit)
+- stage and commit: =SPC g g=, then stage with =s= and commt with =c=
 - don't forget to type a message in the commit message
-- stage file s on unstaged file or SPC g S
 ** Package Manager
 =SPC := package install
     treemacs
-or SPC f p -> init.el and uncomment treemacs
+or =SPC f p= -> init.el and uncomment treemacs
     uncomment treemacs
 ** Customizing
 ** FAQ's
