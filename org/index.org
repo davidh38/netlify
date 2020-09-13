@@ -1,39 +1,44 @@
-#+title: Unofficial Doom Emacs (Under Construction)
+* #+title: Unofficial Doom Emacs (Under Construction)
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
 This site is still under construction, but content will be updated from time to time!
+This is how doom emacs looks like:
 [[file:Screenshot from 2020-09-12 13-43-49.png]]
 ** Doom Emacs Introduction
+1
+Doom Emacs is an Emacs distribution with emphasis on vim users.
+
 official Download: https://github.com/hlissner/doom-emacs
--  Doom Emacs is an Emacs distribution with an emphasis on vim users.
 ** Basic Concepts
 *** Projects
 - what is .projectile for?
   - having a projectile on a deeper level than the git repository
-- adding a project SPC p a
+- adding a project =SPC p a=
 *** Workspace
 motivation: Suppose you are working on your notes and programming at the same time. If you want to have this processes to be separate, workspaces is the answer for that.
 *** Windows
 *** Buffers
 ** Evil Mode (Vim mode for Emacs)
 ** Organizing Tool (org mode)
-- org-agenda (SPC n a n)
-set org-agenda files:
+- open org-agenda: =SPC n a n=
+- set org-agenda files:
+  #+BEGIN_SRC elisp
     (setq org-agenda-files '("~/Dropbox/org/"))
+  #+END_SRC
 ** Web Project
 - ispell: check spelling of the current buffer
 ** Python IDE (inferior python)
-- install the :lang by SPC f P and uncomment python in init.el
+- install the :lang by =SPC f P= and uncomment python in init.el
   - (python +lsp +poetry)
   - (company +tng)
   - pdb, ipdb, gdb, pdbpp
-  - SPC f f -> for starting a new file
-- compile with SPC c c
+  - =SPC f f= -> for starting a new file
+- compile with =SPC c c=
 - start buffer
 - run-python
-- CTRL + C CTRL + C
-- SPC s i for imenu
+- =CTRL + C CTRL + C=
+- imenu =SPC s i=
 - Issues
     with org mode:
   + config for tapping in REPL
@@ -45,12 +50,12 @@ set org-agenda files:
   + Suspicious state from syntax checker python-flake8: Flycheck checker python-flake8 returned (error "Process flycheck-python-flake8 not running"), but its output contained no errors: emacs: /home/dave/.local/bin/flake8: No such file or directory
   + pip3 install 'python-language-server[all]'*** REPL
 *** Debugging
-SPC : pdb
+pdb =SPC :=
 *** Testing
 ** Clojure IDE
 *** REPL
-- install the :lang by SPC f P and uncomment python in init.el
-- SPC : clojure/open-repl
+- install the :lang by =SPC f P= and uncomment python in init.el
+- =SPC := clojure/open-repl
 *** Debugging
 ** File explorer (dired)
 *** show directory content
@@ -71,7 +76,7 @@ configure this in init.el
 - don't forget to type a message in the commit message
 - stage file s on unstaged file or SPC g S
 ** Package Manager
-SPC : package install
+=SPC := package install
     treemacs
 or SPC f p -> init.el and uncomment treemacs
     uncomment treemacs
