@@ -9,6 +9,7 @@ This is how doom emacs looks like:
 Doom Emacs is an Emacs distribution with emphasis on vim users.
 
 official Download: https://github.com/hlissner/doom-emacs
+(use emacs 27)
 ** Basic Concepts
 *** Projects
 - what is .projectile for?
