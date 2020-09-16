@@ -66,6 +66,7 @@ pdb =SPC :=
 *** directory
 ** ELisp IDE
 configure this in init.el
+writing you own function:
 #+BEGIN_SRC elisp
 (defun myownfuncion ()
        (interactive)
@@ -73,7 +74,12 @@ configure this in init.el
 )
 (myownfuncion)
 #+END_SRC
+*** debugging
+https://www.gnu.org/software/emacs/manual/html_node/eintr/edebug.html desribes very fast what to do in order to debug.
+=(eval-defun)= in your own function in a buffer or in
+=(CTRL + x CTRL + e)=
 
+with written functions you can just do something like: enable debugging in SPC h f and then execute the function
 
 ** Version Control (magit)
 - stage and commit: =SPC g g=, then stage with =s=, commtt with =c= and push with =p=
