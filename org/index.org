@@ -1,4 +1,4 @@
- #+title: Unofficial Doom Emacs (Under Construction)
+#+title: Unofficial Doom Emacs (Under Construction)
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 ** This site is still under construction
@@ -17,9 +17,17 @@ official Download: https://github.com/hlissner/doom-emacs
 - adding a project =SPC p a=
 *** Workspace
 motivation: Suppose you are working on your notes and programming at the same time. If you want to have this processes to be separate, workspaces is the answer for that.
-*** Windows
+Windows
+CTRL + T new tab
 *** Buffers
+*** Modules, Major mode, minor modes
 ** Evil Mode (Vim mode for Emacs)
+=SPC h b t= :top level key bindings
+- define keyboard macro
+** Doom emacs
+*** Modules are just bundled packages.
+*** Flags are just optional packages to be installed
+TODO install packages in config.el
 ** Organizing Tool (org mode)
 - org-lint
 - open org-agenda: =SPC n a n=
@@ -30,11 +38,20 @@ motivation: Suppose you are working on your notes and programming at the same ti
 ** Web Project
 - ispell: check spelling of the current buffer
 ** Python IDE (inferior python)
+- snippets!!
+- =SPC c x= flycheck mode
+- =SPC s b= search in buffer
+- =CTRL + c= get all features in python mode
+- look up all python packages in =SPC f f .emacs.d/modules/lang/config.el
+    - for example the module sets python3 for the shell interpreter
+    - look up all functions =SPC s i=
+- find all references of functions: =SPC c D=
+- use debugger: pdb
 - install the :lang by =SPC f P= and uncomment python in init.el
-  - (python +lsp +poetry)
-  - (company +tng)
-  - pdb, ipdb, gdb, pdbpp
-  - =SPC f f= -> for starting a new file
+- (python +lsp +poetry)
+- (company +tng)
+- pdb, ipdb, gdb, pdbpp
+- =SPC f f= -> for starting a new file
 - compile with =SPC c c=
 - start buffer
 - run-python
@@ -52,6 +69,9 @@ motivation: Suppose you are working on your notes and programming at the same ti
    #+end_src
   + Suspicious state from syntax checker python-flake8: Flycheck checker python-flake8 returned (error "Process flycheck-python-flake8 not running"), but its output contained no errors: emacs: /home/dave/.local/bin/flake8: No such file or directory
   + pip3 install 'python-language-server[all]'*** REPL
+*** REpL
+- vterm: open repl
+- send to REPL: =SPC c e=
 *** Debugging
 pdb =SPC :=
 *** Testing
