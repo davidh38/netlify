@@ -69,7 +69,7 @@ TODO install packages in config.el
    #+end_src
   + Suspicious state from syntax checker python-flake8: Flycheck checker python-flake8 returned (error "Process flycheck-python-flake8 not running"), but its output contained no errors: emacs: /home/dave/.local/bin/flake8: No such file or directory
   + pip3 install 'python-language-server[all]'*** REPL
-*** REpL
+*** REPL
 - vterm: open repl
 - send to REPL: =SPC c e=
 *** Debugging
